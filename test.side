@@ -1,0 +1,147 @@
+{
+  "id": "dcc37721-5db4-4aa3-8796-db6195fa655c",
+  "version": "2.0",
+  "name": "aaa",
+  "url": "https://zozo.jp/event/sneakers/",
+  "tests": [{
+    "id": "5107ba50-27f3-4447-92b9-c5e3007e045a",
+    "name": "aaa",
+    "commands": [{
+      "id": "d96c00e4-8993-49f5-9ffc-5c99c4ca8edb",
+      "comment": "",
+      "command": "open",
+      "target": "https://zozo.jp/event/sneakers/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "369d7a1b-83cc-4f29-9586-305822bb5f3b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scroll({   top: 10000,   behavior: \"smooth\" });　",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc31d753-4599-4ab0-a898-7a3791fcce60",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5543d58d-afab-45f6-af71-66bdd7a7ce6b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scroll({   top: 0,   behavior: \"smooth\" });",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7aba9390-9a65-48f2-bb9f-afe3f2eb35a9",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba463140-095f-4925-9a36-001cd563f89a",
+      "comment": "",
+      "command": "store",
+      "target": "1",
+      "targets": [],
+      "value": "linkCount"
+    }, {
+      "id": "bde06054-2089-495e-b765-84ad8882cec9",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//a",
+      "targets": [],
+      "value": "button"
+    }, {
+      "id": "04661661-b668-44be-8086-ede3ed40629e",
+      "comment": "",
+      "command": "while",
+      "target": "${linkCount} < ${button}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e23c892-8d74-4c4d-92a3-3bf3201efb3b",
+      "comment": "",
+      "command": "runScript",
+      "target": "el = document.querySelectorAll('.c-button,a[href*=\"dord\"],a[href*=\"p_gtagid\"]');  rect = el[${linkCount} - 1].getBoundingClientRect(); window.scroll({   top: rect.top - 50,   behavior: \"smooth\" });",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85e4f133-f4ab-46c7-ba57-42c11e6704eb",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c22ab6fe-6aca-4262-8e6d-79a96d696de4",
+      "comment": "",
+      "command": "runScript",
+      "target": "element = document.querySelectorAll('.c-button,a[href*=\"dord\"],a[href*=\"p_gtagid\"]');  element[${linkCount} - 1].click(); ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ee88374-26ed-49e3-bc23-e1ab04fce4a5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.history.back(-1);",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d56cf803-8074-4b74-bb60-b2af4a3252f4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scroll({   top: 10000,   behavior: \"smooth\" });　",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dd4fe8a-7b5b-4c9b-8e52-78a37d5502af",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97cc5b27-9f12-4d3b-91d4-df453a39c6bf",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scroll({   top: 0,   behavior: \"smooth\" });",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81dd03aa-ee2c-41eb-be5f-57007c61cb59",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69f09b44-2b1f-4f9a-a0be-ca739cf08e0f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return + ${linkCount} + 1",
+      "targets": [],
+      "value": "linkCount"
+    }, {
+      "id": "c1d07447-8b48-471c-886e-fcd61b21873e",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2e90e61a-497a-4705-8dd0-f01bd40c0e39",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5107ba50-27f3-4447-92b9-c5e3007e045a"]
+  }],
+  "urls": ["https://zozo.jp/sale/"],
+  "plugins": []
+}
